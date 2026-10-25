@@ -1,0 +1,341 @@
+---
+title: "Prix du porc en France : dynamique et prévision à court terme"
+subtitle: "Cotation hebdomadaire de la classe E — données de la Commission européenne"
+author: "Guy Darcy Remesha"
+date: today
+lang: fr
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: true
+    code-summary: "Voir le code"
+    embed-resources: true
+    theme: cosmo
+    fig-width: 9
+    fig-height: 4.5
+execute:
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(forecast)
+
+theme_set(theme_minimal(base_size = 12) +
+            theme(plot.title.position = "plot", legend.position = "top"))
+col_fr <- "#1f5fa8"; col_ue <- "#9a9a9a"; col_prev <- "#d9622b"
+
+# Format numérique français (virgule décimale) pour le texte et les tableaux
+fmt <- function(x, d = 2, signe = FALSE) {
+  formatC(x, format = "f", digits = d, decimal.mark = ",", flag = if (signe) "+" else "")
+}
+options(knitr.kable.NA = "")
+kable_fr <- function(df, digits = 3) {
+  knitr::kable(df, digits = digits, format.args = list(decimal.mark = ",", big.mark = " "))
+}
+
+# Les données viennent des exports du pipeline ETL (aucune dépendance à la base)
+dir_data <- file.path("..", "data", "powerbi")
+prix <- readr::read_csv(file.path(dir_data, "fait_prix_hebdo.csv"), show_col_types = FALSE)
+prod <- readr::read_csv(file.path(dir_data, "fait_production_mensuelle.csv"),
+                        show_col_types = FALSE)
+
+serie <- prix |>
+  filter(classe == "E", code_pays %in% c("FR", "EU")) |>
+  select(code_pays, date_debut, prix) |>
+  pivot_wider(names_from = code_pays, values_from = prix) |>
+  arrange(date_debut)
+
+fr <- serie |> filter(!is.na(FR))
+derniere_date <- max(fr$date_debut)
+
+# Les modèles de séries temporelles exigent une grille régulière :
+# on complète les semaines manquantes par interpolation linéaire.
+grille <- tibble(date_debut = seq(min(fr$date_debut), derniere_date, by = "week"))
+fr <- grille |>
+  left_join(fr, by = "date_debut") |>
+  mutate(impute = is.na(FR),
+         FR = approx(date_debut[!impute], FR[!impute], xout = date_debut)$y)
+n_imputees <- sum(fr$impute)
+```
+
+## Objectif
+
+Ce rapport décrit l'évolution du prix du porc charcutier en France (classe E,
+en euros par kg de carcasse) et compare plusieurs méthodes simples de prévision
+à court terme, de 1 à 12 semaines. L'objectif est méthodologique : choisir un
+modèle sur la base d'une **évaluation hors échantillon**, et présenter ses
+limites honnêtement.
+
+Les données couvrent la période du `r format(min(fr$date_debut), "%d/%m/%Y")` au
+`r format(derniere_date, "%d/%m/%Y")`, soit `r nrow(fr)` semaines de cotation.
+`r if (n_imputees == 0) "La série est complète : aucune semaine manquante." else sprintf("%d semaine(s) manquante(s) ont été complétées par interpolation linéaire pour la modélisation.", n_imputees)`
+Elles sont collectées automatiquement par le pipeline ETL du dépôt, à partir de
+l'API du portail Agri-food Data de la Commission européenne.
+
+## 1. Évolution du prix : France et moyenne européenne
+
+```{r}
+#| label: fig-serie
+#| fig-cap: "Prix hebdomadaire de la classe E, France et moyenne UE (€/kg carcasse)"
+serie |>
+  pivot_longer(c(FR, EU), names_to = "zone", values_to = "prix") |>
+  mutate(zone = recode(zone, FR = "France", EU = "Moyenne UE")) |>
+  ggplot(aes(date_debut, prix, colour = zone)) +
+  geom_line(linewidth = 0.6) +
+  scale_colour_manual(values = c(France = col_fr, `Moyenne UE` = col_ue)) +
+  labs(x = NULL, y = "€/kg carcasse", colour = NULL)
+```
+
+```{r}
+#| label: chiffres-cles
+recent <- fr |> filter(date_debut > derniere_date - 365)
+ecart_moyen <- mean(serie$FR - serie$EU, na.rm = TRUE)
+ecart_recent <- serie |> filter(date_debut > derniere_date - 365) |>
+  summarise(m = mean(FR - EU, na.rm = TRUE)) |> pull(m)
+```
+
+Sur l'ensemble de la période, l'écart moyen entre le prix français et la
+moyenne européenne est de `r fmt(ecart_moyen, signe = TRUE)` €/kg
+(`r fmt(ecart_recent, signe = TRUE)` €/kg sur les 52 dernières semaines). Sur la
+dernière année, le prix français a varié entre `r fmt(min(recent$FR))` et
+`r fmt(max(recent$FR))` €/kg.
+
+```{r}
+#| label: fig-ecart
+#| fig-cap: "Écart France – moyenne UE (€/kg). Au-dessus de zéro : prix français plus élevé."
+serie |>
+  mutate(ecart = FR - EU) |>
+  ggplot(aes(date_debut, ecart)) +
+  geom_hline(yintercept = 0, colour = "grey50") +
+  geom_area(fill = col_fr, alpha = 0.25) +
+  geom_line(colour = col_fr, linewidth = 0.5) +
+  labs(x = NULL, y = "Écart (€/kg)")
+```
+
+## 2. Saisonnalité
+
+```{r}
+#| label: fig-saison
+#| fig-cap: "Profil saisonnier : écart du prix à sa moyenne annuelle, par semaine ISO"
+profil <- fr |>
+  mutate(annee = as.integer(format(date_debut, "%G")),
+         semaine = as.integer(format(date_debut, "%V"))) |>
+  group_by(annee) |>
+  filter(n() >= 50) |>                     # années complètes uniquement
+  mutate(ecart = FR - mean(FR)) |>
+  ungroup()
+
+profil |>
+  group_by(semaine) |>
+  summarise(moy = mean(ecart), q1 = quantile(ecart, .25), q3 = quantile(ecart, .75)) |>
+  ggplot(aes(semaine, moy)) +
+  geom_ribbon(aes(ymin = q1, ymax = q3), fill = col_fr, alpha = 0.2) +
+  geom_line(colour = col_fr, linewidth = 0.8) +
+  geom_hline(yintercept = 0, colour = "grey50") +
+  labs(x = "Semaine ISO", y = "Écart à la moyenne annuelle (€/kg)",
+       caption = "Bande : écart interquartile entre les années")
+
+par_mois <- profil |>
+  mutate(mois = as.integer(format(date_debut, "%m"))) |>
+  group_by(mois) |>
+  summarise(ecart = mean(ecart), part_au_dessus = mean(ecart > 0))
+noms_mois <- c("janvier", "février", "mars", "avril", "mai", "juin", "juillet",
+               "août", "septembre", "octobre", "novembre", "décembre")
+mois_bas  <- par_mois$mois[which.min(par_mois$ecart)]
+mois_haut <- par_mois$mois[which.max(par_mois$ecart)]
+```
+
+Le prix suit un cycle annuel : en moyenne, il est au plus bas en
+**`r noms_mois[mois_bas]`** (`r fmt(min(par_mois$ecart), signe = TRUE)` €/kg
+par rapport à la moyenne de l'année) et au plus haut en
+**`r noms_mois[mois_haut]`** (`r fmt(max(par_mois$ecart), signe = TRUE)` €/kg).
+Ce profil moyen cache une forte variabilité d'une année à l'autre, visible dans
+la largeur de la bande.
+
+```{r}
+#| label: fig-stl
+#| fig-cap: "Décomposition STL : tendance, saisonnalité et résidu"
+#| fig-height: 6
+# Fréquence de 52 semaines par an (approximation : certaines années ISO en comptent 53)
+y <- ts(fr$FR, frequency = 52)
+dec <- stl(y, s.window = 13, robust = TRUE)
+autoplot(dec) + labs(x = "Années depuis le début de la série")
+part_saison <- var(dec$time.series[, "seasonal"]) / var(fr$FR)
+```
+
+La composante saisonnière explique environ
+`r fmt(100 * part_saison, 0)` % de la variance totale de la série :
+l'essentiel des mouvements vient de la tendance et des chocs de marché, comme
+ceux de la période 2020–2022 (Covid-19, peste porcine africaine en Allemagne,
+flambée du coût de l'aliment).
+
+## 3. Comparaison de modèles de prévision
+
+Cinq méthodes sont comparées :
+
+- **Naïve** : la prévision est égale au dernier prix connu. C'est la référence à battre.
+- **Naïve saisonnière** : la prévision reprend le prix de la même semaine l'année précédente.
+- **STL + ETS** : la série est désaisonnalisée, puis la tendance est prolongée par un lissage exponentiel.
+- **ARIMA + Fourier** : un modèle ARIMA avec des termes de Fourier pour capter la saisonnalité annuelle.
+- **Moyenne STL+ETS / ARIMA** : la moyenne des deux prévisions précédentes.
+
+L'évaluation suit une **validation croisée à origine glissante** : on se place à
+plusieurs dates passées (toutes les 4 semaines sur les deux dernières années),
+on ajuste chaque modèle sur les seules données antérieures, puis on mesure
+l'erreur sur les 12 semaines suivantes. Aucun modèle ne « voit » les données
+qu'il doit prévoir.
+
+```{r}
+#| label: fonctions-prevision
+H <- 12
+K_fourier <- 3
+
+prevoir <- function(y_train, h = H) {
+  stl_ets <- stlf(y_train, h = h, method = "ets")$mean
+  xreg    <- fourier(y_train, K = K_fourier)
+  ar      <- auto.arima(y_train, xreg = xreg, seasonal = FALSE)
+  arima_f <- forecast(ar, xreg = fourier(y_train, K = K_fourier, h = h), h = h)$mean
+  list(
+    `Naïve`              = rep(tail(y_train, 1), h),
+    `Naïve saisonnière`  = snaive(y_train, h = h)$mean,
+    `STL + ETS`          = stl_ets,
+    `ARIMA + Fourier`    = arima_f,
+    `Moyenne STL+ETS / ARIMA` = (stl_ets + arima_f) / 2
+  )
+}
+```
+
+```{r}
+#| label: validation-croisee
+#| cache: true
+n <- length(y)
+origines <- seq(n - 104 - H, n - H, by = 4)
+
+erreurs <- bind_rows(lapply(origines, function(o) {
+  y_train <- ts(y[1:o], frequency = frequency(y))
+  reel    <- y[(o + 1):(o + H)]
+  prev    <- prevoir(y_train, H)
+  bind_rows(lapply(names(prev), function(m) tibble(
+    modele = m, origine = o, horizon = 1:H,
+    erreur = reel - as.numeric(prev[[m]])
+  )))
+}))
+```
+
+```{r}
+#| label: tbl-scores
+#| tbl-cap: "Erreurs hors échantillon (€/kg), moyennées sur les horizons 1 à 12 semaines"
+scores <- erreurs |>
+  group_by(modele) |>
+  summarise(RMSE = sqrt(mean(erreur^2)), MAE = mean(abs(erreur)),
+            `MAE à 4 sem.` = mean(abs(erreur[horizon == 4])),
+            `MAE à 12 sem.` = mean(abs(erreur[horizon == 12]))) |>
+  arrange(RMSE)
+
+meilleur <- scores$modele[1]
+ref_naive <- scores |> filter(modele == "Naïve")
+gain <- 1 - scores$RMSE[1] / ref_naive$RMSE
+
+kable_fr(scores, digits = 3)
+```
+
+```{r}
+#| label: fig-horizon
+#| fig-cap: "Erreur absolue moyenne selon l'horizon de prévision"
+erreurs |>
+  group_by(modele, horizon) |>
+  summarise(MAE = mean(abs(erreur)), .groups = "drop") |>
+  ggplot(aes(horizon, MAE, colour = modele)) +
+  geom_line(linewidth = 0.7) + geom_point(size = 1.5) +
+  scale_x_continuous(breaks = 1:H) +
+  labs(x = "Horizon (semaines)", y = "MAE (€/kg)", colour = NULL) +
+  guides(colour = guide_legend(nrow = 2))
+```
+
+Le modèle le plus performant sur cette période est **`r meilleur`**.
+`r if (meilleur == "Naïve") "Aucun modèle ne bat la prévision naïve : à court terme, le dernier prix connu reste le meilleur indicateur. Ce résultat est fréquent pour des prix de marché et doit être dit clairement." else paste0("Il réduit l'erreur quadratique de ", fmt(100 * gain, 0), " % par rapport à la prévision naïve. Le gain reste modeste : à court terme, le dernier prix connu est déjà un bon indicateur.")`
+L'erreur augmente nettement avec l'horizon : au-delà de quelques semaines, les
+prévisions doivent être lues comme des ordres de grandeur.
+
+## 4. Prévision des 12 prochaines semaines
+
+```{r}
+#| label: fig-prevision
+#| fig-cap: "Prévision à 12 semaines avec intervalles à 80 % et 95 %"
+xreg <- fourier(y, K = K_fourier)
+modele_final <- if (meilleur %in% c("ARIMA + Fourier")) {
+  forecast(auto.arima(y, xreg = xreg, seasonal = FALSE),
+           xreg = fourier(y, K = K_fourier, h = H), h = H)
+} else if (meilleur %in% c("Naïve")) {
+  naive(y, h = H)
+} else if (meilleur %in% c("Naïve saisonnière")) {
+  snaive(y, h = H)
+} else {
+  stlf(y, h = H, method = "ets")   # STL + ETS (et base de la moyenne)
+}
+
+dates_prev <- derniere_date + 7 * (1:H)
+prev_df <- tibble(date = dates_prev, prev = as.numeric(modele_final$mean),
+                  bas80 = as.numeric(modele_final$lower[, 1]),
+                  haut80 = as.numeric(modele_final$upper[, 1]),
+                  bas95 = as.numeric(modele_final$lower[, 2]),
+                  haut95 = as.numeric(modele_final$upper[, 2]))
+
+fr |> filter(date_debut > derniere_date - 2 * 365) |>
+  ggplot(aes(date_debut, FR)) +
+  geom_ribbon(data = prev_df, aes(x = date, ymin = bas95, ymax = haut95),
+              inherit.aes = FALSE, fill = col_prev, alpha = 0.15) +
+  geom_ribbon(data = prev_df, aes(x = date, ymin = bas80, ymax = haut80),
+              inherit.aes = FALSE, fill = col_prev, alpha = 0.3) +
+  geom_line(colour = col_fr, linewidth = 0.6) +
+  geom_line(data = bind_rows(tibble(date = derniere_date, prev = tail(fr$FR, 1)), prev_df),
+            aes(date, prev), colour = col_prev, linewidth = 0.8) +
+  labs(x = NULL, y = "€/kg carcasse",
+       caption = paste("Modèle retenu :", meilleur))
+```
+
+```{r}
+#| label: tbl-prevision
+#| tbl-cap: "Prévisions ponctuelles et intervalle à 80 % (€/kg)"
+prev_df |>
+  transmute(`Semaine du` = format(date, "%d/%m/%Y"),
+            `Prévision` = prev, `Borne basse 80 %` = bas80, `Borne haute 80 %` = haut80) |>
+  kable_fr(digits = 2)
+```
+
+## 5. Production : contexte de l'offre
+
+```{r}
+#| label: fig-production
+#| fig-cap: "Production mensuelle de viande porcine en France (milliers de tonnes équivalent carcasse)"
+prod |>
+  filter(code_pays == "FR") |>
+  ggplot(aes(date_mois, production_kt)) +
+  geom_line(colour = "grey40", linewidth = 0.4) +
+  geom_smooth(method = "loess", span = 0.25, se = FALSE, colour = col_fr) +
+  labs(x = NULL, y = "Milliers de tonnes")
+```
+
+## Limites et pistes
+
+- **Modèles univariés.** Les prévisions n'utilisent que l'historique du prix.
+  Les déterminants économiques (coût de l'aliment, exportations vers l'Asie,
+  volumes abattus, situation sanitaire comme la peste porcine africaine) ne sont
+  pas pris en compte.
+- **Chocs non prévisibles.** Les ruptures de 2020 et 2022 montrent que les
+  intervalles de confiance sous-estiment le risque en période de crise.
+- **Pistes d'amélioration.** Ajouter des covariables (production, prix de
+  l'aliment, prix des pays voisins) dans un modèle de régression dynamique ou un
+  VAR ; tester la transmission des prix entre la France, l'Allemagne et
+  l'Espagne.
+
+---
+
+*Source : Commission européenne, portail Agri-food Data (API pigmeat).
+Traitement : pipeline ETL R/SQL du dépôt, rapport généré avec Quarto.*

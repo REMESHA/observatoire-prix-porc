@@ -1,0 +1,2593 @@
+[ {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 39.99,
+  "heads" : 410.47,
+  "kgPerHead" : 97.42
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 41.55,
+  "heads" : 423.1,
+  "kgPerHead" : 98.2
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 39.77,
+  "heads" : 408.83,
+  "kgPerHead" : 97.28
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 39.57,
+  "heads" : 409.63,
+  "kgPerHead" : 96.6
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 39.88,
+  "heads" : 415.23,
+  "kgPerHead" : 96.04
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 35.77,
+  "heads" : 372.17,
+  "kgPerHead" : 96.11
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 38.22,
+  "heads" : 395.06,
+  "kgPerHead" : 96.74
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 41.2,
+  "heads" : 422.0,
+  "kgPerHead" : 97.63
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 38.97,
+  "heads" : 397.55,
+  "kgPerHead" : 98.03
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 42.92,
+  "heads" : 437.09,
+  "kgPerHead" : 98.19
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 38.75,
+  "heads" : 395.78,
+  "kgPerHead" : 97.91
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 41.08,
+  "heads" : 418.09,
+  "kgPerHead" : 98.26
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 85.71,
+  "heads" : 867.99,
+  "kgPerHead" : 98.75
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 90.08,
+  "heads" : 908.72,
+  "kgPerHead" : 99.13
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 86.69,
+  "heads" : 884.99,
+  "kgPerHead" : 97.96
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 85.23,
+  "heads" : 883.59,
+  "kgPerHead" : 96.46
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 82.18,
+  "heads" : 855.63,
+  "kgPerHead" : 96.05
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 77.99,
+  "heads" : 808.57,
+  "kgPerHead" : 96.45
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 82.87,
+  "heads" : 845.57,
+  "kgPerHead" : 98.0
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 88.65,
+  "heads" : 902.12,
+  "kgPerHead" : 98.27
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 83.24,
+  "heads" : 839.26,
+  "kgPerHead" : 99.18
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 89.37,
+  "heads" : 900.12,
+  "kgPerHead" : 99.29
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 88.55,
+  "heads" : 898.83,
+  "kgPerHead" : 98.52
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 91.63,
+  "heads" : 924.96,
+  "kgPerHead" : 99.06
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 7.93,
+  "heads" : 121.03,
+  "kgPerHead" : 65.52
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 7.21,
+  "heads" : 106.92,
+  "kgPerHead" : 67.43
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 6.3,
+  "heads" : 91.68,
+  "kgPerHead" : 68.72
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 6.23,
+  "heads" : 91.97,
+  "kgPerHead" : 67.74
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 6.86,
+  "heads" : 103.94,
+  "kgPerHead" : 66.0
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 7.28,
+  "heads" : 106.27,
+  "kgPerHead" : 68.5
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 7.11,
+  "heads" : 102.03,
+  "kgPerHead" : 69.69
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 6.49,
+  "heads" : 94.41,
+  "kgPerHead" : 68.74
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 6.46,
+  "heads" : 93.17,
+  "kgPerHead" : 69.34
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 7.95,
+  "heads" : 112.65,
+  "kgPerHead" : 70.57
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 6.21,
+  "heads" : 90.43,
+  "kgPerHead" : 68.67
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 5.98,
+  "heads" : 87.4,
+  "kgPerHead" : 68.42
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 3.74,
+  "heads" : 52.28,
+  "kgPerHead" : 71.54
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 3.51,
+  "heads" : 48.55,
+  "kgPerHead" : 72.3
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 3.45,
+  "heads" : 47.25,
+  "kgPerHead" : 73.02
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 3.46,
+  "heads" : 47.72,
+  "kgPerHead" : 72.51
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 3.41,
+  "heads" : 47.4,
+  "kgPerHead" : 71.94
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 3.19,
+  "heads" : 43.92,
+  "kgPerHead" : 72.63
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 3.26,
+  "heads" : 44.45,
+  "kgPerHead" : 73.34
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 3.63,
+  "heads" : 49.53,
+  "kgPerHead" : 73.29
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 2.93,
+  "heads" : 40.02,
+  "kgPerHead" : 73.21
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 3.0,
+  "heads" : 40.62,
+  "kgPerHead" : 73.86
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 3.34,
+  "heads" : 45.41,
+  "kgPerHead" : 73.55
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 3.42,
+  "heads" : 46.32,
+  "kgPerHead" : 73.83
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 17.36,
+  "heads" : 188.9,
+  "kgPerHead" : 91.9
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 18.16,
+  "heads" : 194.66,
+  "kgPerHead" : 93.29
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 16.38,
+  "heads" : 175.85,
+  "kgPerHead" : 93.15
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 16.51,
+  "heads" : 180.73,
+  "kgPerHead" : 91.35
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 18.18,
+  "heads" : 198.87,
+  "kgPerHead" : 91.42
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 15.83,
+  "heads" : 171.65,
+  "kgPerHead" : 92.22
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 18.02,
+  "heads" : 195.08,
+  "kgPerHead" : 92.37
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 18.43,
+  "heads" : 196.82,
+  "kgPerHead" : 93.64
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 17.06,
+  "heads" : 184.15,
+  "kgPerHead" : 92.64
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 19.35,
+  "heads" : 205.71,
+  "kgPerHead" : 94.06
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 16.28,
+  "heads" : 171.98,
+  "kgPerHead" : 94.66
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 17.09,
+  "heads" : 181.13,
+  "kgPerHead" : 94.35
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 366.97,
+  "heads" : 3877.08,
+  "kgPerHead" : 94.65
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 389.81,
+  "heads" : 4083.57,
+  "kgPerHead" : 95.46
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 363.65,
+  "heads" : 3803.45,
+  "kgPerHead" : 95.61
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 366.84,
+  "heads" : 3863.84,
+  "kgPerHead" : 94.94
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 373.1,
+  "heads" : 3947.98,
+  "kgPerHead" : 94.5
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 352.81,
+  "heads" : 3733.6,
+  "kgPerHead" : 94.5
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 374.24,
+  "heads" : 3939.45,
+  "kgPerHead" : 95.0
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 383.43,
+  "heads" : 4020.58,
+  "kgPerHead" : 95.37
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 362.85,
+  "heads" : 3778.66,
+  "kgPerHead" : 96.03
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 396.66,
+  "heads" : 4150.66,
+  "kgPerHead" : 95.57
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 371.1,
+  "heads" : 3885.85,
+  "kgPerHead" : 95.5
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 384.92,
+  "heads" : 4028.81,
+  "kgPerHead" : 95.54
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 109.74,
+  "heads" : 1233.52,
+  "kgPerHead" : 88.96
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 138.67,
+  "heads" : 1537.39,
+  "kgPerHead" : 90.2
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 134.01,
+  "heads" : 1490.18,
+  "kgPerHead" : 89.93
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 115.14,
+  "heads" : 1290.45,
+  "kgPerHead" : 89.22
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 147.51,
+  "heads" : 1664.43,
+  "kgPerHead" : 88.62
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 122.2,
+  "heads" : 1369.33,
+  "kgPerHead" : 89.24
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 124.94,
+  "heads" : 1376.7,
+  "kgPerHead" : 90.75
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 144.13,
+  "heads" : 1594.55,
+  "kgPerHead" : 90.39
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 112.8,
+  "heads" : 1249.41,
+  "kgPerHead" : 90.28
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 155.51,
+  "heads" : 1718.63,
+  "kgPerHead" : 90.48
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 142.49,
+  "heads" : 1542.0,
+  "kgPerHead" : 92.41
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 162.09,
+  "heads" : 1722.78,
+  "kgPerHead" : 94.09
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 3.26,
+  "heads" : 39.18,
+  "kgPerHead" : 83.21
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 3.53,
+  "heads" : 42.34,
+  "kgPerHead" : 83.37
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 3.57,
+  "heads" : 41.14,
+  "kgPerHead" : 86.78
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 3.43,
+  "heads" : 40.66,
+  "kgPerHead" : 84.36
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 3.91,
+  "heads" : 45.41,
+  "kgPerHead" : 86.1
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 3.55,
+  "heads" : 41.33,
+  "kgPerHead" : 85.89
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 3.44,
+  "heads" : 40.8,
+  "kgPerHead" : 84.31
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 3.75,
+  "heads" : 43.81,
+  "kgPerHead" : 85.6
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 3.59,
+  "heads" : 40.49,
+  "kgPerHead" : 88.66
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 4.14,
+  "heads" : 47.86,
+  "kgPerHead" : 86.5
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 3.3,
+  "heads" : 38.47,
+  "kgPerHead" : 85.78
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 3.73,
+  "heads" : 44.57,
+  "kgPerHead" : 83.69
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 13.02,
+  "heads" : 211.33,
+  "kgPerHead" : 61.61
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 4.77,
+  "heads" : 80.29,
+  "kgPerHead" : 59.41
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 4.86,
+  "heads" : 84.5,
+  "kgPerHead" : 57.51
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 4.97,
+  "heads" : 81.85,
+  "kgPerHead" : 60.72
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 5.04,
+  "heads" : 100.82,
+  "kgPerHead" : 49.99
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 5.48,
+  "heads" : 105.4,
+  "kgPerHead" : 51.99
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 5.47,
+  "heads" : 82.19,
+  "kgPerHead" : 66.55
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 5.39,
+  "heads" : 80.59,
+  "kgPerHead" : 66.88
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 5.67,
+  "heads" : 90.25,
+  "kgPerHead" : 62.83
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 5.01,
+  "heads" : 77.69,
+  "kgPerHead" : 64.49
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 5.42,
+  "heads" : 87.15,
+  "kgPerHead" : 62.19
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 9.42,
+  "heads" : 109.65,
+  "kgPerHead" : 85.91
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 425.93,
+  "heads" : 4673.96,
+  "kgPerHead" : 91.13
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 472.77,
+  "heads" : 5203.97,
+  "kgPerHead" : 90.85
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 412.0,
+  "heads" : 4657.64,
+  "kgPerHead" : 88.46
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 391.73,
+  "heads" : 4553.47,
+  "kgPerHead" : 86.03
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 375.54,
+  "heads" : 4464.6,
+  "kgPerHead" : 84.12
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 350.87,
+  "heads" : 4064.25,
+  "kgPerHead" : 86.33
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 392.5,
+  "heads" : 4479.17,
+  "kgPerHead" : 87.63
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 431.94,
+  "heads" : 4812.82,
+  "kgPerHead" : 89.75
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 385.77,
+  "heads" : 4222.95,
+  "kgPerHead" : 91.35
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 471.84,
+  "heads" : 5221.7,
+  "kgPerHead" : 90.36
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 463.44,
+  "heads" : 4980.05,
+  "kgPerHead" : 93.06
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 492.01,
+  "heads" : 5322.83,
+  "kgPerHead" : 92.43
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 13.66,
+  "heads" : 149.54,
+  "kgPerHead" : 91.35
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 14.64,
+  "heads" : 157.99,
+  "kgPerHead" : 92.66
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 13.11,
+  "heads" : 143.02,
+  "kgPerHead" : 91.67
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 13.5,
+  "heads" : 148.3,
+  "kgPerHead" : 91.03
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 15.11,
+  "heads" : 166.25,
+  "kgPerHead" : 90.89
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 13.83,
+  "heads" : 152.12,
+  "kgPerHead" : 90.92
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 14.35,
+  "heads" : 157.55,
+  "kgPerHead" : 91.08
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 14.44,
+  "heads" : 158.74,
+  "kgPerHead" : 90.97
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 13.59,
+  "heads" : 148.36,
+  "kgPerHead" : 91.6
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 15.87,
+  "heads" : 172.81,
+  "kgPerHead" : 91.83
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 14.15,
+  "heads" : 153.9,
+  "kgPerHead" : 91.94
+}, {
+  "memberStateCode" : "FI",
+  "memberStateName" : "Finland",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 14.18,
+  "heads" : 152.74,
+  "kgPerHead" : 92.84
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 183.33,
+  "heads" : 1947.57,
+  "kgPerHead" : 94.13
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 177.31,
+  "heads" : 1873.29,
+  "kgPerHead" : 94.65
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 176.35,
+  "heads" : 1888.87,
+  "kgPerHead" : 93.36
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 177.71,
+  "heads" : 1923.85,
+  "kgPerHead" : 92.37
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 180.19,
+  "heads" : 1963.92,
+  "kgPerHead" : 91.75
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 165.07,
+  "heads" : 1789.27,
+  "kgPerHead" : 92.26
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 180.75,
+  "heads" : 1944.29,
+  "kgPerHead" : 92.96
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 179.99,
+  "heads" : 1925.89,
+  "kgPerHead" : 93.46
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 171.84,
+  "heads" : 1828.47,
+  "kgPerHead" : 93.98
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 199.55,
+  "heads" : 2110.82,
+  "kgPerHead" : 94.54
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 173.34,
+  "heads" : 1821.11,
+  "kgPerHead" : 95.18
+}, {
+  "memberStateCode" : "FR",
+  "memberStateName" : "France",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 186.84,
+  "heads" : 1957.66,
+  "kgPerHead" : 95.44
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 9.02,
+  "heads" : 160.5,
+  "kgPerHead" : 56.2
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 7.47,
+  "heads" : 103.3,
+  "kgPerHead" : 72.31
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 6.4,
+  "heads" : 95.7,
+  "kgPerHead" : 66.88
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 6.35,
+  "heads" : 94.1,
+  "kgPerHead" : 67.48
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 6.15,
+  "heads" : 94.9,
+  "kgPerHead" : 64.81
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 5.94,
+  "heads" : 81.9,
+  "kgPerHead" : 72.53
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 6.6,
+  "heads" : 88.7,
+  "kgPerHead" : 74.41
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 7.08,
+  "heads" : 92.6,
+  "kgPerHead" : 76.46
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 6.13,
+  "heads" : 86.1,
+  "kgPerHead" : 71.2
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 6.47,
+  "heads" : 83.2,
+  "kgPerHead" : 77.76
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 6.26,
+  "heads" : 78.4,
+  "kgPerHead" : 79.85
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 7.15,
+  "heads" : 87.8,
+  "kgPerHead" : 81.44
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 37.35,
+  "heads" : 408.13,
+  "kgPerHead" : 91.51
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 37.96,
+  "heads" : 400.91,
+  "kgPerHead" : 94.68
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 34.64,
+  "heads" : 366.05,
+  "kgPerHead" : 94.63
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 34.98,
+  "heads" : 374.45,
+  "kgPerHead" : 93.42
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 36.02,
+  "heads" : 390.18,
+  "kgPerHead" : 92.32
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 32.9,
+  "heads" : 353.74,
+  "kgPerHead" : 93.01
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 35.06,
+  "heads" : 371.89,
+  "kgPerHead" : 94.28
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 38.81,
+  "heads" : 404.02,
+  "kgPerHead" : 96.06
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 33.39,
+  "heads" : 347.74,
+  "kgPerHead" : 96.02
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 37.2,
+  "heads" : 389.0,
+  "kgPerHead" : 95.63
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 34.73,
+  "heads" : 362.35,
+  "kgPerHead" : 95.85
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 34.82,
+  "heads" : 363.92,
+  "kgPerHead" : 95.68
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 25.16,
+  "heads" : 280.99,
+  "kgPerHead" : 89.54
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 29.45,
+  "heads" : 322.91,
+  "kgPerHead" : 91.2
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 25.28,
+  "heads" : 280.88,
+  "kgPerHead" : 90.0
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 27.25,
+  "heads" : 301.22,
+  "kgPerHead" : 90.47
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 26.35,
+  "heads" : 300.34,
+  "kgPerHead" : 87.73
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 25.46,
+  "heads" : 290.38,
+  "kgPerHead" : 87.68
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 27.22,
+  "heads" : 301.66,
+  "kgPerHead" : 90.23
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 30.21,
+  "heads" : 320.5,
+  "kgPerHead" : 94.26
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 29.43,
+  "heads" : 312.07,
+  "kgPerHead" : 94.31
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 30.1,
+  "heads" : 324.74,
+  "kgPerHead" : 92.69
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 28.67,
+  "heads" : 303.97,
+  "kgPerHead" : 94.32
+}, {
+  "memberStateCode" : "IE",
+  "memberStateName" : "Ireland",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 28.01,
+  "heads" : 295.89,
+  "kgPerHead" : 94.66
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 94.36,
+  "heads" : 861.82,
+  "kgPerHead" : 109.49
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 95.81,
+  "heads" : 867.97,
+  "kgPerHead" : 110.38
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 100.98,
+  "heads" : 914.3,
+  "kgPerHead" : 110.45
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 101.91,
+  "heads" : 840.92,
+  "kgPerHead" : 121.19
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 102.84,
+  "heads" : 871.79,
+  "kgPerHead" : 117.96
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 89.61,
+  "heads" : 754.21,
+  "kgPerHead" : 118.81
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 100.23,
+  "heads" : 840.41,
+  "kgPerHead" : 119.26
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 118.68,
+  "heads" : 915.44,
+  "kgPerHead" : 129.64
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 110.03,
+  "heads" : 860.03,
+  "kgPerHead" : 127.94
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 117.65,
+  "heads" : 920.23,
+  "kgPerHead" : 127.85
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 102.22,
+  "heads" : 844.39,
+  "kgPerHead" : 121.06
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 104.42,
+  "heads" : 856.12,
+  "kgPerHead" : 121.97
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 5.12,
+  "heads" : 64.13,
+  "kgPerHead" : 79.84
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 5.92,
+  "heads" : 71.36,
+  "kgPerHead" : 82.96
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 5.62,
+  "heads" : 67.18,
+  "kgPerHead" : 83.66
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 5.11,
+  "heads" : 63.06,
+  "kgPerHead" : 81.03
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 5.41,
+  "heads" : 68.11,
+  "kgPerHead" : 79.43
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 5.38,
+  "heads" : 66.3,
+  "kgPerHead" : 81.15
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 5.36,
+  "heads" : 65.8,
+  "kgPerHead" : 81.46
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 5.61,
+  "heads" : 67.41,
+  "kgPerHead" : 83.22
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 5.91,
+  "heads" : 70.99,
+  "kgPerHead" : 83.25
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 6.42,
+  "heads" : 77.37,
+  "kgPerHead" : 82.98
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 5.85,
+  "heads" : 71.7,
+  "kgPerHead" : 81.59
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 5.72,
+  "heads" : 70.13,
+  "kgPerHead" : 81.56
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 1.03,
+  "heads" : 12.24,
+  "kgPerHead" : 84.15
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 1.05,
+  "heads" : 11.91,
+  "kgPerHead" : 88.16
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 1.1,
+  "heads" : 12.59,
+  "kgPerHead" : 87.37
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 1.06,
+  "heads" : 12.08,
+  "kgPerHead" : 87.75
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 0.99,
+  "heads" : 11.69,
+  "kgPerHead" : 84.69
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 1.05,
+  "heads" : 12.13,
+  "kgPerHead" : 86.56
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 1.08,
+  "heads" : 12.62,
+  "kgPerHead" : 85.58
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 1.13,
+  "heads" : 12.79,
+  "kgPerHead" : 88.35
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 1.02,
+  "heads" : 11.62,
+  "kgPerHead" : 87.78
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 1.18,
+  "heads" : 12.87,
+  "kgPerHead" : 91.69
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 0.94,
+  "heads" : 10.35,
+  "kgPerHead" : 90.82
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 1.05,
+  "heads" : 12.52,
+  "kgPerHead" : 83.87
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 2.78,
+  "heads" : 34.35,
+  "kgPerHead" : 80.93
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 2.84,
+  "heads" : 34.82,
+  "kgPerHead" : 81.56
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 3.04,
+  "heads" : 36.82,
+  "kgPerHead" : 82.56
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 3.02,
+  "heads" : 36.48,
+  "kgPerHead" : 82.79
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 2.97,
+  "heads" : 37.11,
+  "kgPerHead" : 80.03
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 2.97,
+  "heads" : 37.05,
+  "kgPerHead" : 80.16
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 2.98,
+  "heads" : 37.03,
+  "kgPerHead" : 80.48
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 3.22,
+  "heads" : 39.45,
+  "kgPerHead" : 81.62
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 2.9,
+  "heads" : 34.67,
+  "kgPerHead" : 83.65
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 3.23,
+  "heads" : 39.11,
+  "kgPerHead" : 82.59
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 2.97,
+  "heads" : 35.85,
+  "kgPerHead" : 82.85
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 3.05,
+  "heads" : 36.22,
+  "kgPerHead" : 84.21
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 0.4,
+  "heads" : 4.77,
+  "kgPerHead" : 83.86
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 0.36,
+  "heads" : 4.25,
+  "kgPerHead" : 84.71
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 0.39,
+  "heads" : 4.59,
+  "kgPerHead" : 84.97
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 0.35,
+  "heads" : 4.19,
+  "kgPerHead" : 83.53
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 0.33,
+  "heads" : 3.94,
+  "kgPerHead" : 83.76
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 0.35,
+  "heads" : 4.04,
+  "kgPerHead" : 86.63
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 0.34,
+  "heads" : 3.89,
+  "kgPerHead" : 87.4
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 0.41,
+  "heads" : 4.58,
+  "kgPerHead" : 89.52
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 0.42,
+  "heads" : 4.71,
+  "kgPerHead" : 89.17
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 0.37,
+  "heads" : 4.18,
+  "kgPerHead" : 88.52
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 0.34,
+  "heads" : 3.85,
+  "kgPerHead" : 88.31
+}, {
+  "memberStateCode" : "MT",
+  "memberStateName" : "Malta",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 0.37,
+  "heads" : 4.22,
+  "kgPerHead" : 87.68
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 128.04,
+  "heads" : 1299.87,
+  "kgPerHead" : 98.5
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 142.4,
+  "heads" : 1439.38,
+  "kgPerHead" : 98.93
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 142.68,
+  "heads" : 1439.72,
+  "kgPerHead" : 99.1
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 141.03,
+  "heads" : 1444.97,
+  "kgPerHead" : 97.6
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 143.09,
+  "heads" : 1463.35,
+  "kgPerHead" : 97.78
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 131.91,
+  "heads" : 1345.36,
+  "kgPerHead" : 98.05
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 140.91,
+  "heads" : 1426.18,
+  "kgPerHead" : 98.8
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 142.44,
+  "heads" : 1421.59,
+  "kgPerHead" : 100.2
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 129.35,
+  "heads" : 1283.26,
+  "kgPerHead" : 100.8
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 155.0,
+  "heads" : 1530.11,
+  "kgPerHead" : 101.3
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 139.42,
+  "heads" : 1372.26,
+  "kgPerHead" : 101.6
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 147.31,
+  "heads" : 1465.79,
+  "kgPerHead" : 100.5
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 148.47,
+  "heads" : 1575.36,
+  "kgPerHead" : 94.25
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 154.73,
+  "heads" : 1652.93,
+  "kgPerHead" : 93.61
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 158.39,
+  "heads" : 1686.47,
+  "kgPerHead" : 93.92
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 147.26,
+  "heads" : 1583.28,
+  "kgPerHead" : 93.01
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 143.74,
+  "heads" : 1567.82,
+  "kgPerHead" : 91.68
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 131.93,
+  "heads" : 1447.31,
+  "kgPerHead" : 91.16
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 140.06,
+  "heads" : 1517.99,
+  "kgPerHead" : 92.27
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 148.24,
+  "heads" : 1597.94,
+  "kgPerHead" : 92.77
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 156.82,
+  "heads" : 1675.42,
+  "kgPerHead" : 93.6
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 162.71,
+  "heads" : 1723.94,
+  "kgPerHead" : 94.38
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 150.41,
+  "heads" : 1610.79,
+  "kgPerHead" : 93.38
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 152.43,
+  "heads" : 1621.67,
+  "kgPerHead" : 94.0
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 29.62,
+  "heads" : 506.21,
+  "kgPerHead" : 58.51
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 30.96,
+  "heads" : 471.29,
+  "kgPerHead" : 65.69
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 28.29,
+  "heads" : 443.67,
+  "kgPerHead" : 63.76
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 28.1,
+  "heads" : 447.86,
+  "kgPerHead" : 62.74
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 30.65,
+  "heads" : 515.99,
+  "kgPerHead" : 59.4
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 26.72,
+  "heads" : 438.69,
+  "kgPerHead" : 60.91
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 26.87,
+  "heads" : 442.89,
+  "kgPerHead" : 60.67
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 28.52,
+  "heads" : 445.81,
+  "kgPerHead" : 63.97
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 26.72,
+  "heads" : 436.03,
+  "kgPerHead" : 61.28
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 34.16,
+  "heads" : 502.45,
+  "kgPerHead" : 67.99
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 28.06,
+  "heads" : 410.98,
+  "kgPerHead" : 68.28
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 30.11,
+  "heads" : 412.55,
+  "kgPerHead" : 72.99
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 26.34,
+  "heads" : 305.97,
+  "kgPerHead" : 86.09
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 23.16,
+  "heads" : 266.38,
+  "kgPerHead" : 86.94
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 23.82,
+  "heads" : 276.57,
+  "kgPerHead" : 86.13
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 21.01,
+  "heads" : 250.51,
+  "kgPerHead" : 83.87
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 21.6,
+  "heads" : 261.84,
+  "kgPerHead" : 82.49
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 21.02,
+  "heads" : 246.04,
+  "kgPerHead" : 85.43
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 20.68,
+  "heads" : 237.82,
+  "kgPerHead" : 86.96
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 24.14,
+  "heads" : 266.6,
+  "kgPerHead" : 90.55
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 22.99,
+  "heads" : 253.97,
+  "kgPerHead" : 90.52
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 21.34,
+  "heads" : 233.76,
+  "kgPerHead" : 91.29
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 20.69,
+  "heads" : 228.36,
+  "kgPerHead" : 90.6
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 20.4,
+  "heads" : 228.87,
+  "kgPerHead" : 89.13
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 20.53,
+  "heads" : 217.17,
+  "kgPerHead" : 94.53
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 21.78,
+  "heads" : 230.76,
+  "kgPerHead" : 94.38
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 20.14,
+  "heads" : 214.97,
+  "kgPerHead" : 93.69
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 20.74,
+  "heads" : 222.9,
+  "kgPerHead" : 93.05
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 22.14,
+  "heads" : 237.52,
+  "kgPerHead" : 93.21
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 21.12,
+  "heads" : 222.92,
+  "kgPerHead" : 94.74
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 20.95,
+  "heads" : 220.36,
+  "kgPerHead" : 95.07
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 21.88,
+  "heads" : 229.52,
+  "kgPerHead" : 95.33
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 20.08,
+  "heads" : 208.4,
+  "kgPerHead" : 96.35
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 23.61,
+  "heads" : 243.82,
+  "kgPerHead" : 96.83
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 20.62,
+  "heads" : 212.05,
+  "kgPerHead" : 97.24
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 20.66,
+  "heads" : 212.02,
+  "kgPerHead" : 97.44
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 1.89,
+  "heads" : 21.47,
+  "kgPerHead" : 88.03
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 1.87,
+  "heads" : 20.16,
+  "kgPerHead" : 92.76
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 1.69,
+  "heads" : 18.39,
+  "kgPerHead" : 91.9
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 1.54,
+  "heads" : 17.19,
+  "kgPerHead" : 89.59
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 1.71,
+  "heads" : 19.3,
+  "kgPerHead" : 88.6
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 1.52,
+  "heads" : 16.68,
+  "kgPerHead" : 91.13
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 1.74,
+  "heads" : 18.86,
+  "kgPerHead" : 92.26
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 1.83,
+  "heads" : 19.56,
+  "kgPerHead" : 93.56
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 1.81,
+  "heads" : 18.93,
+  "kgPerHead" : 95.62
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 2.03,
+  "heads" : 20.81,
+  "kgPerHead" : 97.55
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 1.68,
+  "heads" : 17.39,
+  "kgPerHead" : 96.61
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 1.88,
+  "heads" : 20.0,
+  "kgPerHead" : 94.0
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "December",
+  "tonnes" : 4.0,
+  "heads" : 44.1,
+  "kgPerHead" : 90.7
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "November",
+  "tonnes" : 4.33,
+  "heads" : 46.96,
+  "kgPerHead" : 92.21
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "October",
+  "tonnes" : 4.3,
+  "heads" : 46.64,
+  "kgPerHead" : 92.2
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "September",
+  "tonnes" : 4.07,
+  "heads" : 44.0,
+  "kgPerHead" : 92.5
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "August",
+  "tonnes" : 4.16,
+  "heads" : 45.48,
+  "kgPerHead" : 91.47
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "July",
+  "tonnes" : 3.45,
+  "heads" : 38.0,
+  "kgPerHead" : 90.79
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "June",
+  "tonnes" : 4.05,
+  "heads" : 44.13,
+  "kgPerHead" : 91.77
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "May",
+  "tonnes" : 4.85,
+  "heads" : 51.94,
+  "kgPerHead" : 93.38
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "April",
+  "tonnes" : 4.76,
+  "heads" : 49.43,
+  "kgPerHead" : 96.3
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "March",
+  "tonnes" : 5.41,
+  "heads" : 56.32,
+  "kgPerHead" : 96.06
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "February",
+  "tonnes" : 4.05,
+  "heads" : 43.46,
+  "kgPerHead" : 93.19
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2022,
+  "month" : "January",
+  "tonnes" : 4.45,
+  "heads" : 47.87,
+  "kgPerHead" : 92.96
+} ]

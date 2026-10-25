@@ -1,0 +1,105 @@
+// =============================================================================
+// mesures.dax — Mesures du rapport Power BI
+// À créer dans une table de mesures vide nommée « _Mesures »
+// (Accueil > Entrer des données > nommer la table « _Mesures » > Charger),
+// puis : Nouvelle mesure > coller la formule.
+// =============================================================================
+
+
+// ---------------------------------------------------------------- Prix -------
+
+// Renvoie vide si plusieurs unités sont mélangées (€/kg et €/tête des porcelets)
+Prix moyen =
+IF (
+    DISTINCTCOUNT ( fait_prix_hebdo[unite] ) > 1,
+    BLANK (),
+    AVERAGE ( fait_prix_hebdo[prix] )
+)
+
+Dernière semaine =
+MAX ( fait_prix_hebdo[date_debut] )
+
+Prix dernière semaine =
+VAR derniere = [Dernière semaine]
+RETURN
+    CALCULATE ( [Prix moyen], dim_date[date] = derniere )
+
+Prix UE =
+CALCULATE ( [Prix moyen], dim_pays[code_pays] = "EU" )
+
+Écart vs UE (€/kg) =
+[Prix moyen] - [Prix UE]
+
+Écart vs UE (%) =
+DIVIDE ( [Prix moyen], [Prix UE] ) - 1
+
+Prix N-1 =
+CALCULATE ( [Prix moyen], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+
+Variation sur un an =
+DIVIDE ( [Prix moyen] - [Prix N-1], [Prix N-1] )
+
+Moyenne mobile 4 semaines =
+VAR fin = MAX ( dim_date[date] )
+RETURN
+    CALCULATE ( [Prix moyen], DATESINPERIOD ( dim_date[date], fin, -28, DAY ) )
+
+Variation hebdo dernière semaine =
+VAR derniere = [Dernière semaine]
+RETURN
+    CALCULATE ( AVERAGE ( fait_prix_hebdo[variation_hebdo] ), dim_date[date] = derniere )
+
+Prix min période =
+MINX ( VALUES ( fait_prix_hebdo[date_debut] ), [Prix moyen] )
+
+Prix max période =
+MAXX ( VALUES ( fait_prix_hebdo[date_debut] ), [Prix moyen] )
+
+// Rang du pays sur la dernière semaine (les agrégats UE ne sont pas classés)
+Rang prix pays =
+IF (
+    SELECTEDVALUE ( dim_pays[est_agregat] ) = FALSE (),
+    RANKX (
+        FILTER ( ALL ( dim_pays ), dim_pays[est_agregat] = FALSE () ),
+        [Prix dernière semaine],
+        ,
+        DESC,
+        DENSE
+    )
+)
+
+
+// ----------------------------------------------------------- Production ------
+
+Production (kt) =
+SUM ( fait_production_mensuelle[production_kt] )
+
+Production N-1 (kt) =
+CALCULATE ( [Production (kt)], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+
+Variation production sur un an =
+DIVIDE ( [Production (kt)] - [Production N-1 (kt)], [Production N-1 (kt)] )
+
+Abattages (milliers de têtes) =
+SUM ( fait_production_mensuelle[abattages_milliers_tetes] )
+
+Poids moyen carcasse (kg) =
+DIVIDE ( [Production (kt)] * 1000, [Abattages (milliers de têtes)] )
+
+
+// ------------------------------------------------------ Qualité / suivi ------
+
+Anomalies =
+COUNTROWS ( qc_anomalies )
+
+Anomalies bloquantes =
+CALCULATE ( COUNTROWS ( qc_anomalies ), qc_anomalies[severite] = "bloquant" )
+
+Dernière mise à jour =
+"Données chargées le "
+    & FORMAT ( MAX ( fait_prix_hebdo[charge_le] ), "dd/mm/yyyy à hh:nn" )
+
+Titre graphique prix =
+"Prix — "
+    & SELECTEDVALUE ( dim_classe[libelle], "sélectionnez une classe" )
+    & " (" & SELECTEDVALUE ( dim_classe[unite], "" ) & ")"

@@ -1,0 +1,13 @@
+{
+  "name": "Observatoire prix du porc",
+  "dataColors": [
+    "#1F5FA8", "#9A9A9A", "#D9622B", "#2E8B57",
+    "#7A4FA3", "#C9A227", "#4BA3C3", "#B24C63"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#1E2329",
+  "tableAccent": "#1F5FA8",
+  "good": "#2E8B57",
+  "neutral": "#C9A227",
+  "bad": "#B24C63"
+}

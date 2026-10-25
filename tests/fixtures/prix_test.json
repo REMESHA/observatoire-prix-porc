@@ -1,0 +1,12 @@
+[
+  {"memberStateCode":"FR","memberStateName":"France","beginDate":"06/01/2025","endDate":"12/01/2025","price":"€180.00","unit":"100 KG","weekNumber":2,"pigClass":"E"},
+  {"memberStateCode":"FR","memberStateName":"France","beginDate":"13/01/2025","endDate":"19/01/2025","price":"€182.00","unit":"100 KG","weekNumber":3,"pigClass":"E"},
+  {"memberStateCode":"FR","memberStateName":"France","beginDate":"13/01/2025","endDate":"19/01/2025","price":"€183.00","unit":"100 KG","weekNumber":3,"pigClass":"E"},
+  {"memberStateCode":"FR","memberStateName":"France","beginDate":"20/01/2025","endDate":"26/01/2025","price":"€240.00","unit":"100 KG","weekNumber":4,"pigClass":"E"},
+  {"memberStateCode":"FR","memberStateName":"France","beginDate":"10/02/2025","endDate":"16/02/2025","price":"€238.00","unit":"100 KG","weekNumber":7,"pigClass":"E"},
+  {"memberStateCode":"FR","memberStateName":"France","beginDate":"17/02/2025","endDate":"23/02/2025","price":"n.d.","unit":"100 KG","weekNumber":8,"pigClass":"E"},
+  {"memberStateCode":"FR","memberStateName":"France","beginDate":"06/01/2025","endDate":"12/01/2025","price":"€1,045.00","unit":"TONNE","weekNumber":2,"pigClass":"S"},
+  {"memberStateCode":"FR","memberStateName":"France","beginDate":"06/01/2025","endDate":"12/01/2025","price":"€45.50","unit":"P","weekNumber":2,"pigClass":"Piglet"},
+  {"memberStateCode":"EU","memberStateName":"European Union","beginDate":"06/01/2025","endDate":"12/01/2025","price":"€170.00","unit":"100 KG","weekNumber":2,"pigClass":"E"},
+  {"memberStateCode":"EU","memberStateName":"European Union","beginDate":"06/01/2025","endDate":"12/01/2025","price":"€170.00","unit":"100 KG","weekNumber":2,"pigClass":"E"}
+]

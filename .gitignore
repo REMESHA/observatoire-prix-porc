@@ -1,0 +1,17 @@
+# Base et exports binaires : reconstruits à chaque exécution du pipeline
+data/db/
+data/powerbi/*.parquet
+logs/
+*.tmp
+
+# R / Quarto
+.Rhistory
+.RData
+.Rproj.user/
+analyse/*_cache/
+analyse/*_files/
+analyse/*.html
+site/
+
+# Power BI : fichiers temporaires de verrouillage
+~$*.pbix

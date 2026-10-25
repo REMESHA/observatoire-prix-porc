@@ -1,0 +1,5 @@
+source,type,severite,n
+prix,semaines_manquantes,alerte,272
+prix,valeur_atypique,alerte,240
+prix,valeur_invalide,bloquant,102
+prix,variation_brutale,alerte,652
