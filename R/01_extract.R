@@ -23,9 +23,23 @@ appel_api <- function(endpoint, params, cfg = CONFIG) {
     req_user_agent("observatoire-prix-porc (projet portfolio, R/httr2)") |>
     req_retry(max_tries = 2, backoff = ~ 2^.x)   # erreurs 429/503 du serveur
 
+  sous_windows <- .Platform$OS.type == "windows"
+
   for (essai in seq_len(cfg$max_essais)) {
     resultat <- tryCatch(resp_body_string(req_perform(req)), error = function(e) e)
     if (!inherits(resultat, "error")) return(resultat)
+
+    # Repli sous Windows : certains postes (antivirus, proxy, réseau) coupent les
+    # connexions de curl vers ce serveur, mais pas celles du système Windows.
+    # On retente alors avec le client HTTP de Windows, via PowerShell.
+    if (sous_windows) {
+      repli <- tryCatch(telecharger_via_windows(req$url, cfg), error = function(e) e)
+      if (!inherits(repli, "error")) {
+        log_info("Téléchargement réussi via le client HTTP de Windows (repli)")
+        return(repli)
+      }
+    }
+
     if (essai < cfg$max_essais) {
       log_warn("Essai ", essai, "/", cfg$max_essais, " échoué (",
                conditionMessage(resultat)[1], ") — nouvel essai dans ", 2^essai, " s")
@@ -33,6 +47,26 @@ appel_api <- function(endpoint, params, cfg = CONFIG) {
     }
   }
   stop(resultat)
+}
+
+# Téléchargement par Invoke-WebRequest (PowerShell), qui utilise la pile réseau
+# de Windows, comme les navigateurs. Renvoie le corps de la réponse en texte.
+telecharger_via_windows <- function(url, cfg = CONFIG) {
+  tmp <- tempfile(fileext = ".json")
+  on.exit(unlink(tmp), add = TRUE)
+  commande <- paste0(
+    "$ProgressPreference = 'SilentlyContinue'; ",
+    "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; ",
+    "Invoke-WebRequest -Uri '", url, "' -OutFile '", normalizePath(tmp, mustWork = FALSE),
+    "' -UseBasicParsing -TimeoutSec ", cfg$timeout_s
+  )
+  code <- system2("powershell", c("-NoProfile", "-NonInteractive", "-Command",
+                                  shQuote(commande, type = "cmd")),
+                  stdout = FALSE, stderr = FALSE)
+  if (!identical(code, 0L) || !file.exists(tmp) || file.size(tmp) == 0) {
+    stop("échec du téléchargement via PowerShell (code ", code, ")")
+  }
+  paste(readLines(tmp, encoding = "UTF-8", warn = FALSE), collapse = "\n")
 }
 
 # Liste des extractions échouées pendant l'exécution en cours
