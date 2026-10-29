@@ -1,0 +1,5 @@
+# Lu automatiquement par R quand il démarre dans ce dossier (projet RStudio).
+# Sous Windows, utilise OpenSSL au lieu de schannel pour les connexions HTTPS
+# (évite l'erreur « schannel: server closed abruptly (missing close_notify) »).
+# Sans effet sous macOS et Linux.
+CURL_SSL_BACKEND=openssl

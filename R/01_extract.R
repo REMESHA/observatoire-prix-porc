@@ -11,17 +11,32 @@
 library(httr2)
 library(jsonlite)
 
-# Appel générique à l'API avec nouvelles tentatives en cas d'erreur réseau
+# Appel générique à l'API, avec nouvelles tentatives.
+# req_retry() ne refait la requête qu'après une réponse d'erreur du serveur
+# (429, 503...). Une coupure réseau (connexion fermée, délai dépassé) n'est pas
+# retentée par défaut dans toutes les versions de httr2 : la boucle ci-dessous
+# couvre ce cas, en attendant 2, 4 puis 8 secondes entre les essais.
 appel_api <- function(endpoint, params, cfg = CONFIG) {
   req <- request(paste0(cfg$api_base, endpoint)) |>
     req_url_query(!!!params) |>
     req_timeout(cfg$timeout_s) |>
     req_user_agent("observatoire-prix-porc (projet portfolio, R/httr2)") |>
-    req_retry(max_tries = cfg$max_essais, backoff = ~ 2^.x)
+    req_retry(max_tries = 2, backoff = ~ 2^.x)   # erreurs 429/503 du serveur
 
-  resp <- req_perform(req)
-  resp_body_string(resp)
+  for (essai in seq_len(cfg$max_essais)) {
+    resultat <- tryCatch(resp_body_string(req_perform(req)), error = function(e) e)
+    if (!inherits(resultat, "error")) return(resultat)
+    if (essai < cfg$max_essais) {
+      log_warn("Essai ", essai, "/", cfg$max_essais, " échoué (",
+               conditionMessage(resultat)[1], ") — nouvel essai dans ", 2^essai, " s")
+      Sys.sleep(2^essai)
+    }
+  }
+  stop(resultat)
 }
+
+# Liste des extractions échouées pendant l'exécution en cours
+.echecs_extraction <- character()
 
 # Une année = une requête (les réponses restent de taille raisonnable)
 extraire_annee <- function(source, annee, cfg = CONFIG) {
@@ -59,7 +74,15 @@ extraire_annee <- function(source, annee, cfg = CONFIG) {
     log_error(source, " ", annee, " : échec de l'appel API — ", conditionMessage(e))
     NULL
   })
-  if (is.null(corps)) return(if (file.exists(fichier)) fichier else NA_character_)
+  if (is.null(corps)) {
+    .echecs_extraction <<- c(.echecs_extraction, paste(source, annee))
+    if (file.exists(fichier)) {
+      log_warn(source, " ", annee, " : la version déjà téléchargée est conservée (",
+               format(file.mtime(fichier), "%d/%m/%Y"), ")")
+      return(fichier)
+    }
+    return(NA_character_)
+  }
 
   n <- length(fromJSON(corps, simplifyVector = FALSE))
   if (n == 0) {
@@ -76,10 +99,13 @@ extraire_annee <- function(source, annee, cfg = CONFIG) {
 }
 
 extract <- function(cfg = CONFIG) {
+  .echecs_extraction <<- character()
   annees <- seq(cfg$annee_debut, cfg$annee_fin)
   fichiers <- list(
     prix       = vapply(annees, \(a) extraire_annee("prix", a, cfg), character(1)),
     production = vapply(annees, \(a) extraire_annee("production", a, cfg), character(1))
   )
-  lapply(fichiers, \(f) f[!is.na(f)])
+  resultat <- lapply(fichiers, \(f) f[!is.na(f)])
+  attr(resultat, "echecs") <- .echecs_extraction
+  resultat
 }
