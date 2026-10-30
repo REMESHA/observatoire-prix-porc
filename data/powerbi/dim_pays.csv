@@ -1,31 +1,31 @@
 code_pays,nom_pays,est_moyenne_ue,est_agregat
-ES,Spain,false,false
-EU,European Union,true,true
-LU,Luxembourg,false,false
-IT,Italy,false,false
-EE,Estonia,false,false
-FR,France,false,false
-PT,Portugal,false,false
-SK,Slovakia,false,false
-BG,Bulgaria,false,false
-IE,Ireland,false,false
-CY,Cyprus,false,false
-LV,Latvia,false,false
-SI,Slovenia,false,false
-RO,Romania,false,false
-FI,Finland,false,false
-NL,Netherlands,false,false
-SE,Sweden,false,false
 AT,Austria,false,false
+BG,Bulgaria,false,false
+EU,European Union,true,true
 EU+UK,EU + UK,false,true
-MT,Malta,false,false
+LV,Latvia,false,false
 PL,Poland,false,false
+RO,Romania,false,false
+SK,Slovakia,false,false
+DE,Germany,false,false
+LT,Lithuania,false,false
+UK,UK up to 01/02/2020,false,false
 BE,Belgium,false,false
+ES,Spain,false,false
+FI,Finland,false,false
+FR,France,false,false
+HR,Croatia,false,false
+IE,Ireland,false,false
+MT,Malta,false,false
+NL,Netherlands,false,false
+PT,Portugal,false,false
+SE,Sweden,false,false
+SI,Slovenia,false,false
+CY,Cyprus,false,false
 CZ,Czechia,false,false
 DK,Denmark,false,false
-UK,UK up to 01/02/2020,false,false
-HU,Hungary,false,false
-LT,Lithuania,false,false
-DE,Germany,false,false
+EE,Estonia,false,false
 EL,Greece,false,false
-HR,Croatia,false,false
+HU,Hungary,false,false
+IT,Italy,false,false
+LU,Luxembourg,false,false

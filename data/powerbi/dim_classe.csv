@@ -1,5 +1,5 @@
 classe,libelle,unite,ordre_affichage
 R,Classe R,EUR/kg carcasse,3
-S,Classe S (très maigre),EUR/kg carcasse,1
 Piglet,Porcelet,EUR/tete,4
+S,Classe S (très maigre),EUR/kg carcasse,1
 E,Classe E (référence),EUR/kg carcasse,2
