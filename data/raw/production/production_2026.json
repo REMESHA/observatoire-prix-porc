@@ -2,6 +2,14 @@
   "memberStateCode" : "AT",
   "memberStateName" : "Austria",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 36.19,
+  "heads" : 371.49,
+  "kgPerHead" : 97.42
+}, {
+  "memberStateCode" : "AT",
+  "memberStateName" : "Austria",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 38.22,
   "heads" : 391.96,
@@ -54,6 +62,22 @@
   "tonnes" : 40.97,
   "heads" : 405.51,
   "kgPerHead" : 101.03
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2026,
+  "month" : "September",
+  "tonnes" : 82.02,
+  "heads" : 843.06,
+  "kgPerHead" : 97.29
+}, {
+  "memberStateCode" : "BE",
+  "memberStateName" : "Belgium",
+  "year" : 2026,
+  "month" : "August",
+  "tonnes" : 68.61,
+  "heads" : 713.12,
+  "kgPerHead" : 96.21
 }, {
   "memberStateCode" : "BE",
   "memberStateName" : "Belgium",
@@ -114,6 +138,14 @@
   "memberStateCode" : "BG",
   "memberStateName" : "Bulgaria",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 8.11,
+  "heads" : 114.55,
+  "kgPerHead" : 70.8
+}, {
+  "memberStateCode" : "BG",
+  "memberStateName" : "Bulgaria",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 7.81,
   "heads" : 109.15,
@@ -166,6 +198,14 @@
   "tonnes" : 7.64,
   "heads" : 109.17,
   "kgPerHead" : 69.98
+}, {
+  "memberStateCode" : "CY",
+  "memberStateName" : "Cyprus",
+  "year" : 2026,
+  "month" : "August",
+  "tonnes" : 2.9,
+  "heads" : 40.1,
+  "kgPerHead" : 72.32
 }, {
   "memberStateCode" : "CY",
   "memberStateName" : "Cyprus",
@@ -226,6 +266,14 @@
   "memberStateCode" : "CZ",
   "memberStateName" : "Czechia",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 17.46,
+  "heads" : 187.63,
+  "kgPerHead" : 93.06
+}, {
+  "memberStateCode" : "CZ",
+  "memberStateName" : "Czechia",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 17.67,
   "heads" : 187.76,
@@ -278,6 +326,14 @@
   "tonnes" : 18.69,
   "heads" : 194.16,
   "kgPerHead" : 96.26
+}, {
+  "memberStateCode" : "DE",
+  "memberStateName" : "Germany",
+  "year" : 2026,
+  "month" : "August",
+  "tonnes" : 343.49,
+  "heads" : 3582.96,
+  "kgPerHead" : 95.87
 }, {
   "memberStateCode" : "DE",
   "memberStateName" : "Germany",
@@ -338,6 +394,14 @@
   "memberStateCode" : "DK",
   "memberStateName" : "Denmark",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 120.51,
+  "heads" : 1277.3,
+  "kgPerHead" : 94.35
+}, {
+  "memberStateCode" : "DK",
+  "memberStateName" : "Denmark",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 129.78,
   "heads" : 1375.27,
@@ -390,6 +454,14 @@
   "tonnes" : 134.58,
   "heads" : 1392.41,
   "kgPerHead" : 96.65
+}, {
+  "memberStateCode" : "EE",
+  "memberStateName" : "Estonia",
+  "year" : 2026,
+  "month" : "August",
+  "tonnes" : 3.47,
+  "heads" : 41.68,
+  "kgPerHead" : 83.25
 }, {
   "memberStateCode" : "EE",
   "memberStateName" : "Estonia",
@@ -450,6 +522,14 @@
   "memberStateCode" : "EL",
   "memberStateName" : "Greece",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 6.52,
+  "heads" : 107.94,
+  "kgPerHead" : 60.4
+}, {
+  "memberStateCode" : "EL",
+  "memberStateName" : "Greece",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 5.7,
   "heads" : 87.38,
@@ -506,10 +586,18 @@
   "memberStateCode" : "ES",
   "memberStateName" : "Spain",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 356.2,
+  "heads" : 4153.82,
+  "kgPerHead" : 85.75
+}, {
+  "memberStateCode" : "ES",
+  "memberStateName" : "Spain",
+  "year" : 2026,
   "month" : "July",
-  "tonnes" : 396.1,
-  "heads" : 4400.52,
-  "kgPerHead" : 90.01
+  "tonnes" : 394.69,
+  "heads" : 4392.38,
+  "kgPerHead" : 89.86
 }, {
   "memberStateCode" : "ES",
   "memberStateName" : "Spain",
@@ -690,6 +778,14 @@
   "memberStateCode" : "HR",
   "memberStateName" : "Croatia",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 6.37,
+  "heads" : 90.9,
+  "kgPerHead" : 70.08
+}, {
+  "memberStateCode" : "HR",
+  "memberStateName" : "Croatia",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 7.19,
   "heads" : 90.8,
@@ -746,10 +842,18 @@
   "memberStateCode" : "HU",
   "memberStateName" : "Hungary",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 35.01,
+  "heads" : 380.09,
+  "kgPerHead" : 92.11
+}, {
+  "memberStateCode" : "HU",
+  "memberStateName" : "Hungary",
+  "year" : 2026,
   "month" : "July",
-  "tonnes" : 39.27,
-  "heads" : 422.61,
-  "kgPerHead" : 92.92
+  "tonnes" : 39.26,
+  "heads" : 422.46,
+  "kgPerHead" : 92.93
 }, {
   "memberStateCode" : "HU",
   "memberStateName" : "Hungary",
@@ -866,6 +970,14 @@
   "memberStateCode" : "IT",
   "memberStateName" : "Italy",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 100.85,
+  "heads" : 765.33,
+  "kgPerHead" : 131.77
+}, {
+  "memberStateCode" : "IT",
+  "memberStateName" : "Italy",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 98.6,
   "heads" : 785.48,
@@ -922,6 +1034,14 @@
   "memberStateCode" : "LT",
   "memberStateName" : "Lithuania",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 6.5,
+  "heads" : 79.71,
+  "kgPerHead" : 81.55
+}, {
+  "memberStateCode" : "LT",
+  "memberStateName" : "Lithuania",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 6.93,
   "heads" : 83.98,
@@ -974,6 +1094,14 @@
   "tonnes" : 6.44,
   "heads" : 75.66,
   "kgPerHead" : 85.12
+}, {
+  "memberStateCode" : "LU",
+  "memberStateName" : "Luxembourg",
+  "year" : 2026,
+  "month" : "September",
+  "tonnes" : 0.82,
+  "heads" : 8.93,
+  "kgPerHead" : 91.83
 }, {
   "memberStateCode" : "LU",
   "memberStateName" : "Luxembourg",
@@ -1038,6 +1166,14 @@
   "tonnes" : 0.78,
   "heads" : 8.08,
   "kgPerHead" : 96.53
+}, {
+  "memberStateCode" : "LV",
+  "memberStateName" : "Latvia",
+  "year" : 2026,
+  "month" : "August",
+  "tonnes" : 2.76,
+  "heads" : 32.64,
+  "kgPerHead" : 84.56
 }, {
   "memberStateCode" : "LV",
   "memberStateName" : "Latvia",
@@ -1162,9 +1298,17 @@
   "memberStateCode" : "NL",
   "memberStateName" : "Netherlands",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 99.74,
+  "heads" : 1028.22,
+  "kgPerHead" : 97.0
+}, {
+  "memberStateCode" : "NL",
+  "memberStateName" : "Netherlands",
+  "year" : 2026,
   "month" : "July",
-  "tonnes" : 104.92,
-  "heads" : 1094.06,
+  "tonnes" : 105.78,
+  "heads" : 1102.99,
   "kgPerHead" : 95.9
 }, {
   "memberStateCode" : "NL",
@@ -1214,6 +1358,14 @@
   "tonnes" : 125.79,
   "heads" : 1232.06,
   "kgPerHead" : 102.1
+}, {
+  "memberStateCode" : "PL",
+  "memberStateName" : "Poland",
+  "year" : 2026,
+  "month" : "August",
+  "tonnes" : 157.94,
+  "heads" : 1671.91,
+  "kgPerHead" : 94.47
 }, {
   "memberStateCode" : "PL",
   "memberStateName" : "Poland",
@@ -1274,6 +1426,14 @@
   "memberStateCode" : "PT",
   "memberStateName" : "Portugal",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 30.15,
+  "heads" : 485.45,
+  "kgPerHead" : 62.11
+}, {
+  "memberStateCode" : "PT",
+  "memberStateName" : "Portugal",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 31.78,
   "heads" : 504.69,
@@ -1326,6 +1486,14 @@
   "tonnes" : 32.2,
   "heads" : 421.24,
   "kgPerHead" : 76.44
+}, {
+  "memberStateCode" : "RO",
+  "memberStateName" : "Romania",
+  "year" : 2026,
+  "month" : "August",
+  "tonnes" : 25.2,
+  "heads" : 293.43,
+  "kgPerHead" : 85.88
 }, {
   "memberStateCode" : "RO",
   "memberStateName" : "Romania",
@@ -1386,6 +1554,14 @@
   "memberStateCode" : "SE",
   "memberStateName" : "Sweden",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 20.28,
+  "heads" : 214.7,
+  "kgPerHead" : 94.46
+}, {
+  "memberStateCode" : "SE",
+  "memberStateName" : "Sweden",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 22.69,
   "heads" : 236.97,
@@ -1442,6 +1618,14 @@
   "memberStateCode" : "SI",
   "memberStateName" : "Slovenia",
   "year" : 2026,
+  "month" : "August",
+  "tonnes" : 1.45,
+  "heads" : 17.17,
+  "kgPerHead" : 84.45
+}, {
+  "memberStateCode" : "SI",
+  "memberStateName" : "Slovenia",
+  "year" : 2026,
   "month" : "July",
   "tonnes" : 1.42,
   "heads" : 16.15,
@@ -1494,6 +1678,14 @@
   "tonnes" : 1.75,
   "heads" : 18.87,
   "kgPerHead" : 92.74
+}, {
+  "memberStateCode" : "SK",
+  "memberStateName" : "Slovakia",
+  "year" : 2026,
+  "month" : "August",
+  "tonnes" : 2.75,
+  "heads" : 30.47,
+  "kgPerHead" : 90.25
 }, {
   "memberStateCode" : "SK",
   "memberStateName" : "Slovakia",

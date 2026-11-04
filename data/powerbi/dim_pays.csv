@@ -1,12 +1,4 @@
 code_pays,nom_pays,est_moyenne_ue,est_agregat
-AT,Austria,false,false
-BG,Bulgaria,false,false
-EU,European Union,true,true
-EU+UK,EU + UK,false,true
-LV,Latvia,false,false
-PL,Poland,false,false
-RO,Romania,false,false
-SK,Slovakia,false,false
 DE,Germany,false,false
 LT,Lithuania,false,false
 UK,UK up to 01/02/2020,false,false
@@ -21,6 +13,14 @@ NL,Netherlands,false,false
 PT,Portugal,false,false
 SE,Sweden,false,false
 SI,Slovenia,false,false
+AT,Austria,false,false
+BG,Bulgaria,false,false
+EU,European Union,true,true
+EU+UK,EU + UK,false,true
+LV,Latvia,false,false
+PL,Poland,false,false
+RO,Romania,false,false
+SK,Slovakia,false,false
 CY,Cyprus,false,false
 CZ,Czechia,false,false
 DK,Denmark,false,false
