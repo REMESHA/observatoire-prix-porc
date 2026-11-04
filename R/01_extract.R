@@ -27,10 +27,19 @@ appel_api <- function(endpoint, params, cfg = CONFIG) {
 
   for (essai in seq_len(cfg$max_essais)) {
     resultat <- tryCatch(resp_body_string(req_perform(req)), error = function(e) e)
-    if (!inherits(resultat, "error")) return(resultat)
+    if (!inherits(resultat, "error") && json_valide(resultat)) return(resultat)
+    if (!inherits(resultat, "error")) resultat <- simpleError("réponse JSON incomplète")
 
-    # Repli sous Windows : certains postes (antivirus, proxy, réseau) coupent les
-    # connexions de curl vers ce serveur, mais pas celles du système Windows.
+    # Repli n° 1 (tous systèmes) : client Python qui tolère la fermeture
+    # brutale de la connexion par le serveur (voir R/telecharger.py).
+    repli <- tryCatch(telecharger_via_python(req$url, cfg), error = function(e) e)
+    if (!inherits(repli, "error")) {
+      log_info("Téléchargement réussi via le client Python (repli)")
+      return(repli)
+    }
+
+    # Repli n° 2 sous Windows : certains postes (antivirus, proxy, réseau) coupent
+    # les connexions de curl vers ce serveur, mais pas celles du système Windows.
     # On retente alors avec le client HTTP de Windows, via PowerShell.
     if (sous_windows) {
       repli <- tryCatch(telecharger_via_windows(req$url, cfg), error = function(e) e)
@@ -47,6 +56,29 @@ appel_api <- function(endpoint, params, cfg = CONFIG) {
     }
   }
   stop(resultat)
+}
+
+# Une réponse n'est acceptée que si c'est un JSON complet et lisible
+json_valide <- function(txt) {
+  isTRUE(tryCatch({ jsonlite::parse_json(txt); TRUE }, error = function(e) FALSE))
+}
+
+# Téléchargement par le script R/telecharger.py (si Python 3 est installé)
+telecharger_via_python <- function(url, cfg = CONFIG) {
+  python <- Sys.which(c("python3", "python"))
+  # Sous Windows, ignorer le faux « python » de WindowsApps (il ouvre le Store)
+  python <- python[nzchar(python) & !grepl("WindowsApps", python)][1]
+  if (is.na(python)) stop("Python non disponible")
+  tmp <- tempfile(fileext = ".json")
+  on.exit(unlink(tmp), add = TRUE)
+  sortie <- suppressWarnings(system2(python,
+    c("R/telecharger.py", shQuote(url), shQuote(tmp), cfg$timeout_s),
+    stdout = TRUE, stderr = TRUE))
+  code <- attr(sortie, "status") %||% 0L
+  if (!identical(as.integer(code), 0L) || !file.exists(tmp) || file.size(tmp) == 0) {
+    stop("échec du téléchargement via Python : ", paste(sortie, collapse = " "))
+  }
+  paste(readLines(tmp, encoding = "UTF-8", warn = FALSE), collapse = "\n")
 }
 
 # Téléchargement par Invoke-WebRequest (PowerShell), qui utilise la pile réseau
@@ -66,7 +98,9 @@ telecharger_via_windows <- function(url, cfg = CONFIG) {
   if (!identical(code, 0L) || !file.exists(tmp) || file.size(tmp) == 0) {
     stop("échec du téléchargement via PowerShell (code ", code, ")")
   }
-  paste(readLines(tmp, encoding = "UTF-8", warn = FALSE), collapse = "\n")
+  corps <- paste(readLines(tmp, encoding = "UTF-8", warn = FALSE), collapse = "\n")
+  if (!json_valide(corps)) stop("réponse JSON incomplète via PowerShell")
+  corps
 }
 
 # Liste des extractions échouées pendant l'exécution en cours

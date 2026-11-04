@@ -64,5 +64,15 @@ log_info(sprintf("=== Fin du pipeline : %s (%.0f s) ===", statut,
 
 # Code de sortie pour GitHub Actions (seulement hors session interactive,
 # pour ne pas fermer RStudio quand on lance le script avec source()).
-# Un succès partiel est signalé comme une erreur : la CI doit alerter.
-if (!interactive()) quit(status = if (statut == "succes") 0 else 1)
+# - succès : sortie normale ;
+# - partiel (source injoignable, anciennes données conservées) : avertissement
+#   visible dans GitHub, mais le rapport est quand même publié ;
+# - échec : la CI s'arrête et envoie une alerte.
+if (!interactive()) {
+  if (statut == "partiel" && nzchar(Sys.getenv("GITHUB_ACTIONS"))) {
+    cat("::warning title=Données non actualisées::",
+        "La source n'a pas répondu ; les données de la semaine précédente sont conservées.\n",
+        sep = "")
+  }
+  quit(status = if (statut == "echec") 1 else 0)
+}

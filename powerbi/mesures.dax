@@ -24,8 +24,13 @@ VAR derniere = [Dernière semaine]
 RETURN
     CALCULATE ( [Prix moyen], dim_date[date] = derniere )
 
+// REMOVEFILTERS est indispensable : sans lui, un segment posé sur
+// dim_pays[nom_pays] (ex. France) resterait actif et le résultat serait vide.
 Prix UE =
-CALCULATE ( [Prix moyen], dim_pays[code_pays] = "EU" )
+CALCULATE ( [Prix moyen], REMOVEFILTERS ( dim_pays ), dim_pays[code_pays] = "EU" )
+
+Prix UE dernière semaine =
+CALCULATE ( [Prix dernière semaine], REMOVEFILTERS ( dim_pays ), dim_pays[code_pays] = "EU" )
 
 Écart vs UE (€/kg) =
 [Prix moyen] - [Prix UE]
@@ -38,6 +43,15 @@ CALCULATE ( [Prix moyen], SAMEPERIODLASTYEAR ( dim_date[date] ) )
 
 Variation sur un an =
 DIVIDE ( [Prix moyen] - [Prix N-1], [Prix N-1] )
+
+// Variation de la dernière semaine publiée par rapport à la même semaine
+// un an plus tôt (52 semaines = 364 jours, même jour de la semaine).
+Variation sur un an (dernière semaine) =
+VAR derniere = [Dernière semaine]
+VAR prix_n   = [Prix dernière semaine]
+VAR prix_n1  = CALCULATE ( [Prix moyen], dim_date[date] = derniere - 364 )
+RETURN
+    DIVIDE ( prix_n - prix_n1, prix_n1 )
 
 Moyenne mobile 4 semaines =
 VAR fin = MAX ( dim_date[date] )
