@@ -10,14 +10,6 @@ SK,Slovakia,false,false
 DE,Germany,false,false
 LT,Lithuania,false,false
 UK,UK up to 01/02/2020,false,false
-CY,Cyprus,false,false
-CZ,Czechia,false,false
-DK,Denmark,false,false
-EE,Estonia,false,false
-EL,Greece,false,false
-HU,Hungary,false,false
-IT,Italy,false,false
-LU,Luxembourg,false,false
 BE,Belgium,false,false
 ES,Spain,false,false
 FI,Finland,false,false
@@ -29,3 +21,11 @@ NL,Netherlands,false,false
 PT,Portugal,false,false
 SE,Sweden,false,false
 SI,Slovenia,false,false
+CY,Cyprus,false,false
+CZ,Czechia,false,false
+DK,Denmark,false,false
+EE,Estonia,false,false
+EL,Greece,false,false
+HU,Hungary,false,false
+IT,Italy,false,false
+LU,Luxembourg,false,false
