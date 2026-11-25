@@ -523,9 +523,9 @@
   "memberStateName" : "Greece",
   "year" : 2026,
   "month" : "August",
-  "tonnes" : 6.52,
-  "heads" : 107.94,
-  "kgPerHead" : 60.4
+  "tonnes" : 5.98,
+  "heads" : 87.82,
+  "kgPerHead" : 68.09
 }, {
   "memberStateCode" : "EL",
   "memberStateName" : "Greece",
